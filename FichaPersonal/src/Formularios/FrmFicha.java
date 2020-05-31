@@ -246,7 +246,7 @@ public class FrmFicha extends javax.swing.JFrame {
 
         scpInformacion.setBackground(new java.awt.Color(153, 153, 255));
 
-        panelPrincipal.setBackground(new java.awt.Color(235, 245, 251));
+        panelPrincipal.setBackground(new java.awt.Color(255, 243, 224));
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
         panelInfoPersonal.setBackground(new java.awt.Color(204, 204, 255));
@@ -485,13 +485,15 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelPrincipal.add(panelFoto, gridBagConstraints);
 
-        panelEstadoCivil.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Estado civil", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
+        panelEstadoCivil.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Estado civil", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 102))); // NOI18N
         panelEstadoCivil.setOpaque(false);
         panelEstadoCivil.setLayout(new java.awt.GridBagLayout());
 
         buttonGroup1.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton1.setText("Casado");
+        jRadioButton1.setContentAreaFilled(false);
+        jRadioButton1.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -504,6 +506,8 @@ public class FrmFicha extends javax.swing.JFrame {
         buttonGroup1.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton2.setText("Soltero");
+        jRadioButton2.setContentAreaFilled(false);
+        jRadioButton2.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -544,7 +548,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         panelPrincipal.add(panelEstadoCivil, gridBagConstraints);
 
-        panelContacto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
+        panelContacto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 102))); // NOI18N
         panelContacto.setOpaque(false);
         panelContacto.setLayout(new java.awt.GridBagLayout());
 
@@ -639,7 +643,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelContacto, gridBagConstraints);
 
-        panelLugarNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Lugar de nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
+        panelLugarNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Lugar de nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 102))); // NOI18N
         panelLugarNacimiento.setOpaque(false);
         panelLugarNacimiento.setLayout(new java.awt.GridBagLayout());
 
@@ -728,7 +732,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelLugarNacimiento, gridBagConstraints);
 
-        panelContactoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Persona de contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION));
+        panelContactoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Persona de contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 11), new java.awt.Color(102, 102, 102))); // NOI18N
         panelContactoPersonal.setOpaque(false);
         panelContactoPersonal.setLayout(new java.awt.GridBagLayout());
 
