@@ -26,10 +26,20 @@ public class FrmFicha extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panelEncabezado = new javax.swing.JPanel();
         scpInformacion = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
+        panelInfoPersonal = new javax.swing.JPanel();
+        panelInstitucion = new javax.swing.JPanel();
+        panelFoto = new javax.swing.JPanel();
+        panelEstadoCivil = new javax.swing.JPanel();
+        panelContacto = new javax.swing.JPanel();
+        panelLugarNacimiento = new javax.swing.JPanel();
+        panelContactoPersonal = new javax.swing.JPanel();
+        jPanel1 = new javax.swing.JPanel();
+        jPanel2 = new javax.swing.JPanel();
         panelControles = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -45,18 +55,194 @@ public class FrmFicha extends javax.swing.JFrame {
             .addGap(0, 151, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panelEncabezado, java.awt.BorderLayout.PAGE_START);
+        getContentPane().add(panelEncabezado, java.awt.BorderLayout.NORTH);
 
-        javax.swing.GroupLayout panelPrincipalLayout = new javax.swing.GroupLayout(panelPrincipal);
-        panelPrincipal.setLayout(panelPrincipalLayout);
-        panelPrincipalLayout.setHorizontalGroup(
-            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 475, Short.MAX_VALUE)
+        scpInformacion.setBackground(new java.awt.Color(153, 153, 255));
+
+        panelPrincipal.setLayout(new java.awt.GridBagLayout());
+
+        panelInfoPersonal.setBackground(new java.awt.Color(204, 204, 255));
+
+        javax.swing.GroupLayout panelInfoPersonalLayout = new javax.swing.GroupLayout(panelInfoPersonal);
+        panelInfoPersonal.setLayout(panelInfoPersonalLayout);
+        panelInfoPersonalLayout.setHorizontalGroup(
+            panelInfoPersonalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
-        panelPrincipalLayout.setVerticalGroup(
-            panelPrincipalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelInfoPersonalLayout.setVerticalGroup(
+            panelInfoPersonalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelInfoPersonal, gridBagConstraints);
+
+        panelInstitucion.setBackground(new java.awt.Color(153, 204, 255));
+
+        javax.swing.GroupLayout panelInstitucionLayout = new javax.swing.GroupLayout(panelInstitucion);
+        panelInstitucion.setLayout(panelInstitucionLayout);
+        panelInstitucionLayout.setHorizontalGroup(
+            panelInstitucionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelInstitucionLayout.setVerticalGroup(
+            panelInstitucionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelInstitucion, gridBagConstraints);
+
+        panelFoto.setBackground(new java.awt.Color(51, 204, 255));
+
+        javax.swing.GroupLayout panelFotoLayout = new javax.swing.GroupLayout(panelFoto);
+        panelFoto.setLayout(panelFotoLayout);
+        panelFotoLayout.setHorizontalGroup(
+            panelFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelFotoLayout.setVerticalGroup(
+            panelFotoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 9;
+        gridBagConstraints.gridheight = 9;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelFoto, gridBagConstraints);
+
+        panelEstadoCivil.setBackground(new java.awt.Color(255, 102, 204));
+
+        javax.swing.GroupLayout panelEstadoCivilLayout = new javax.swing.GroupLayout(panelEstadoCivil);
+        panelEstadoCivil.setLayout(panelEstadoCivilLayout);
+        panelEstadoCivilLayout.setHorizontalGroup(
+            panelEstadoCivilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelEstadoCivilLayout.setVerticalGroup(
+            panelEstadoCivilLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.gridheight = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelEstadoCivil, gridBagConstraints);
+
+        panelContacto.setBackground(new java.awt.Color(204, 153, 255));
+
+        javax.swing.GroupLayout panelContactoLayout = new javax.swing.GroupLayout(panelContacto);
+        panelContacto.setLayout(panelContactoLayout);
+        panelContactoLayout.setHorizontalGroup(
+            panelContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelContactoLayout.setVerticalGroup(
+            panelContactoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 10;
+        gridBagConstraints.gridwidth = 9;
+        gridBagConstraints.gridheight = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelContacto, gridBagConstraints);
+
+        panelLugarNacimiento.setBackground(new java.awt.Color(153, 255, 153));
+
+        javax.swing.GroupLayout panelLugarNacimientoLayout = new javax.swing.GroupLayout(panelLugarNacimiento);
+        panelLugarNacimiento.setLayout(panelLugarNacimientoLayout);
+        panelLugarNacimientoLayout.setHorizontalGroup(
+            panelLugarNacimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelLugarNacimientoLayout.setVerticalGroup(
+            panelLugarNacimientoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 15;
+        gridBagConstraints.gridwidth = 8;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelLugarNacimiento, gridBagConstraints);
+
+        panelContactoPersonal.setBackground(new java.awt.Color(255, 255, 153));
+
+        javax.swing.GroupLayout panelContactoPersonalLayout = new javax.swing.GroupLayout(panelContactoPersonal);
+        panelContactoPersonal.setLayout(panelContactoPersonalLayout);
+        panelContactoPersonalLayout.setHorizontalGroup(
+            panelContactoPersonalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        panelContactoPersonalLayout.setVerticalGroup(
+            panelContactoPersonalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 9;
+        gridBagConstraints.gridy = 15;
+        gridBagConstraints.gridwidth = 9;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(panelContactoPersonal, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 18;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridheight = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(jPanel1, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 100, Short.MAX_VALUE)
         );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 25;
+        gridBagConstraints.gridwidth = 5;
+        gridBagConstraints.gridheight = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        panelPrincipal.add(jPanel2, gridBagConstraints);
 
         scpInformacion.setViewportView(panelPrincipal);
 
@@ -73,7 +259,7 @@ public class FrmFicha extends javax.swing.JFrame {
             .addGap(0, 270, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panelControles, java.awt.BorderLayout.CENTER);
+        getContentPane().add(panelControles, java.awt.BorderLayout.SOUTH);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -114,8 +300,17 @@ public class FrmFicha extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel panelContacto;
+    private javax.swing.JPanel panelContactoPersonal;
     private javax.swing.JPanel panelControles;
     private javax.swing.JPanel panelEncabezado;
+    private javax.swing.JPanel panelEstadoCivil;
+    private javax.swing.JPanel panelFoto;
+    private javax.swing.JPanel panelInfoPersonal;
+    private javax.swing.JPanel panelInstitucion;
+    private javax.swing.JPanel panelLugarNacimiento;
     private javax.swing.JPanel panelPrincipal;
     private javax.swing.JScrollPane scpInformacion;
     // End of variables declaration//GEN-END:variables
