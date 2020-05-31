@@ -373,7 +373,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -411,7 +411,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -476,9 +476,9 @@ public class FrmFicha extends javax.swing.JFrame {
         panelFoto.add(jButton2, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 9;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -493,7 +493,7 @@ public class FrmFicha extends javax.swing.JFrame {
         jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton1.setText("Casado");
         jRadioButton1.setContentAreaFilled(false);
-        jRadioButton1.setOpaque(false);
+        jRadioButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -507,7 +507,7 @@ public class FrmFicha extends javax.swing.JFrame {
         jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton2.setText("Soltero");
         jRadioButton2.setContentAreaFilled(false);
-        jRadioButton2.setOpaque(false);
+        jRadioButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 1;
@@ -540,7 +540,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 10;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -634,9 +634,9 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContacto.add(jTextField8, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 10;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -725,7 +725,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 14;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -796,15 +796,16 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContactoPersonal.add(jLabel19, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 14;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelContactoPersonal, gridBagConstraints);
 
+        panelInfoAcademica1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         panelInfoAcademica1.setOpaque(false);
         panelInfoAcademica1.setLayout(new java.awt.GridBagLayout());
 
@@ -816,8 +817,9 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         panelInfoAcademica1.add(jLabel20, gridBagConstraints);
 
         jLabel21.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -828,8 +830,9 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         panelInfoAcademica1.add(jLabel21, gridBagConstraints);
 
         jLabel22.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -840,17 +843,21 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         panelInfoAcademica1.add(jLabel22, gridBagConstraints);
+
+        jCheckBox1.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox1, gridBagConstraints);
 
+        jCheckBox2.setOpaque(false);
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
@@ -860,14 +867,16 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox2, gridBagConstraints);
+
+        jCheckBox3.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox3, gridBagConstraints);
 
@@ -877,10 +886,11 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 30);
         panelInfoAcademica1.add(jTextField14, gridBagConstraints);
 
         jTextField15.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
@@ -889,10 +899,11 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 30);
         panelInfoAcademica1.add(jTextField15, gridBagConstraints);
 
         jTextField16.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
@@ -901,14 +912,15 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 7;
+        gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 30);
         panelInfoAcademica1.add(jTextField16, gridBagConstraints);
 
         jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel23.setForeground(new java.awt.Color(102, 102, 102));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel23.setText("Instruccion");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -919,27 +931,28 @@ public class FrmFicha extends javax.swing.JFrame {
         panelInfoAcademica1.add(jLabel23, gridBagConstraints);
 
         jLabel24.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel24.setForeground(new java.awt.Color(102, 102, 102));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel24.setText("Titulo obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         panelInfoAcademica1.add(jLabel24, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 18;
-        gridBagConstraints.gridwidth = 25;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.gridheight = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 0.8;
+        gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 0.15;
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
         panelPrincipal.add(panelInfoAcademica1, gridBagConstraints);
 
+        panelInfoAcemica2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         panelInfoAcemica2.setOpaque(false);
         panelInfoAcemica2.setLayout(new java.awt.GridBagLayout());
 
@@ -951,7 +964,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 4;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel25, gridBagConstraints);
 
@@ -963,7 +976,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 3;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel26, gridBagConstraints);
 
@@ -975,12 +988,12 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridy = 2;
         gridBagConstraints.gridwidth = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel27, gridBagConstraints);
 
         jLabel28.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel28.setForeground(new java.awt.Color(102, 102, 102));
         jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel28.setText("Instruccion");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -989,28 +1002,31 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 5;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         panelInfoAcemica2.add(jLabel28, gridBagConstraints);
+
+        jCheckBox4.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jCheckBox4, gridBagConstraints);
+
+        jCheckBox5.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jCheckBox5, gridBagConstraints);
+
+        jCheckBox6.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
-        gridBagConstraints.weightx = 0.2;
+        gridBagConstraints.weightx = 0.1;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jCheckBox6, gridBagConstraints);
 
@@ -1018,40 +1034,43 @@ public class FrmFicha extends javax.swing.JFrame {
         jTextField17.setForeground(new java.awt.Color(51, 51, 51));
         jTextField17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 4;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
         panelInfoAcemica2.add(jTextField17, gridBagConstraints);
 
         jTextField18.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField18.setForeground(new java.awt.Color(51, 51, 51));
         jTextField18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 3;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
         panelInfoAcemica2.add(jTextField18, gridBagConstraints);
 
         jTextField19.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField19.setForeground(new java.awt.Color(51, 51, 51));
         jTextField19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 5;
+        gridBagConstraints.gridx = 4;
         gridBagConstraints.gridy = 2;
-        gridBagConstraints.gridwidth = 6;
+        gridBagConstraints.gridwidth = 7;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 10);
         panelInfoAcemica2.add(jTextField19, gridBagConstraints);
 
         jLabel29.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel29.setForeground(new java.awt.Color(102, 102, 102));
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel29.setText("Titulo obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1064,10 +1083,10 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 24;
-        gridBagConstraints.gridwidth = 25;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.gridheight = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
-        gridBagConstraints.weightx = 0.8;
+        gridBagConstraints.weightx = 1.0;
         gridBagConstraints.weighty = 0.15;
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
         panelPrincipal.add(panelInfoAcemica2, gridBagConstraints);
@@ -1078,7 +1097,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 22;
-        gridBagConstraints.gridwidth = 25;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.8;
         panelPrincipal.add(jLabel1, gridBagConstraints);
@@ -1088,16 +1107,17 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 28;
-        gridBagConstraints.gridwidth = 25;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.8;
         panelPrincipal.add(jLabel2, gridBagConstraints);
 
+        panelOtraInformacion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         panelOtraInformacion.setOpaque(false);
         panelOtraInformacion.setLayout(new java.awt.GridBagLayout());
 
         jLabel30.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel30.setForeground(new java.awt.Color(102, 102, 102));
         jLabel30.setText("Informacion Laboral");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -1197,7 +1217,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelOtraInformacion.add(jSeparator3, gridBagConstraints);
 
         jLabel34.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(51, 51, 51));
+        jLabel34.setForeground(new java.awt.Color(102, 102, 102));
         jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel34.setText("Informacion de la entidad bancaria donde tien una cuenta activa");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1285,7 +1305,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 30;
-        gridBagConstraints.gridwidth = 26;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.gridheight = 4;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.1;
@@ -1312,7 +1332,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 34;
-        gridBagConstraints.gridwidth = 26;
+        gridBagConstraints.gridwidth = 35;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 1.0;
@@ -1444,7 +1464,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 6;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1482,7 +1502,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 7;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 2;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1547,9 +1567,9 @@ public class FrmFicha extends javax.swing.JFrame {
         panelFoto1.add(jButton8, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 0;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 9;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1607,7 +1627,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 10;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1689,9 +1709,9 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContacto1.add(jTextField33, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 10;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1780,7 +1800,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 14;
-        gridBagConstraints.gridwidth = 14;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
@@ -1851,9 +1871,9 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContactoPersonal1.add(jLabel56, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 15;
+        gridBagConstraints.gridx = 18;
         gridBagConstraints.gridy = 14;
-        gridBagConstraints.gridwidth = 11;
+        gridBagConstraints.gridwidth = 17;
         gridBagConstraints.gridheight = 3;
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.5;
