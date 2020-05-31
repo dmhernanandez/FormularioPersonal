@@ -266,9 +266,11 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.05;
         panelPrincipal.add(panelInstitucion, gridBagConstraints);
 
+        panelFoto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Foto"));
         panelFoto.setLayout(new java.awt.GridBagLayout());
 
-        jLabel9.setText("jLabel9");
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/persona48.png"))); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 0;
@@ -279,7 +281,12 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.1;
         panelFoto.add(jLabel9, gridBagConstraints);
 
-        jButton1.setText("jButton1");
+        jButton1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto48.png"))); // NOI18N
+        jButton1.setText("Subir");
+        jButton1.setBorderPainted(false);
+        jButton1.setContentAreaFilled(false);
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 13;
@@ -289,7 +296,12 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.1;
         panelFoto.add(jButton1, gridBagConstraints);
 
-        jButton2.setText("jButton2");
+        jButton2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara48.png"))); // NOI18N
+        jButton2.setText("Tomar");
+        jButton2.setBorderPainted(false);
+        jButton2.setContentAreaFilled(false);
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 13;
