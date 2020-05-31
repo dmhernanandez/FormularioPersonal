@@ -29,6 +29,11 @@ public class FrmFicha extends javax.swing.JFrame {
         java.awt.GridBagConstraints gridBagConstraints;
 
         buttonGroup1 = new javax.swing.ButtonGroup();
+        panelBotones = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
         scpInformacion = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
         panelInfoPersonal = new javax.swing.JPanel();
@@ -123,12 +128,51 @@ public class FrmFicha extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jButton3.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
+        jButton3.setText("Nuevo");
+        jButton3.setBorder(null);
+        jButton3.setBorderPainted(false);
+        jButton3.setContentAreaFilled(false);
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        panelBotones.add(jButton3);
+
+        jButton4.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
+        jButton4.setText("Guardar");
+        jButton4.setBorder(null);
+        jButton4.setBorderPainted(false);
+        jButton4.setContentAreaFilled(false);
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        panelBotones.add(jButton4);
+
+        jButton5.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
+        jButton5.setText("Actualizar");
+        jButton5.setBorder(null);
+        jButton5.setBorderPainted(false);
+        jButton5.setContentAreaFilled(false);
+        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        panelBotones.add(jButton5);
+
+        jButton6.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
+        jButton6.setText("Eliminar");
+        jButton6.setBorder(null);
+        jButton6.setBorderPainted(false);
+        jButton6.setContentAreaFilled(false);
+        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        panelBotones.add(jButton6);
+
+        getContentPane().add(panelBotones, java.awt.BorderLayout.SOUTH);
+
         scpInformacion.setBackground(new java.awt.Color(153, 153, 255));
 
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
         panelInfoPersonal.setLayout(new java.awt.GridBagLayout());
 
+        jLabel3.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel3.setText("Numero de cedula");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -138,6 +182,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jLabel3, gridBagConstraints);
 
+        jLabel4.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel4.setText("Nombres");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -147,6 +192,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jLabel4, gridBagConstraints);
 
+        jLabel5.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel5.setText("Apellidos");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -156,6 +202,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jLabel5, gridBagConstraints);
 
+        jLabel6.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel6.setText("Fecha de Nacimiento");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -165,6 +212,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jLabel6, gridBagConstraints);
 
+        jLabel7.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel7.setText("Tipo de sangre");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -174,6 +222,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jLabel7, gridBagConstraints);
 
+        jTextField1.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField1.setText("0503-2000-12541");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -184,6 +233,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jTextField1, gridBagConstraints);
 
+        jTextField2.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField2.setText("Dany Mauricio");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -194,6 +244,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jTextField2, gridBagConstraints);
 
+        jTextField3.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField3.setText("Hernandez Hernnadez");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -204,6 +255,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jTextField3, gridBagConstraints);
 
+        jTextField4.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField4.setText("16 de febrero del 2000");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -214,6 +266,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelInfoPersonal.add(jTextField4, gridBagConstraints);
 
+        jComboBox1.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione Tipo ", "AB+", "AB-", "A+", "A-", "B+", "B-", "O+" }));
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -236,6 +289,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelInstitucion.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Ultima Insitución Pública en caso de haber laborado"));
         panelInstitucion.setLayout(new java.awt.GridBagLayout());
 
+        jLabel8.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel8.setText("Nombre");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -246,6 +300,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         panelInstitucion.add(jLabel8, gridBagConstraints);
 
+        jTextField5.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField5.setText("Alcaldia de Puerto Cortes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
@@ -282,11 +337,15 @@ public class FrmFicha extends javax.swing.JFrame {
         panelFoto.add(jLabel9, gridBagConstraints);
 
         jButton1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto48.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto32.png"))); // NOI18N
         jButton1.setText("Subir");
         jButton1.setBorderPainted(false);
         jButton1.setContentAreaFilled(false);
         jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto32.png"))); // NOI18N
+        jButton1.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto48.png"))); // NOI18N
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 13;
@@ -297,11 +356,15 @@ public class FrmFicha extends javax.swing.JFrame {
         panelFoto.add(jButton1, gridBagConstraints);
 
         jButton2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara48.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara32.png"))); // NOI18N
         jButton2.setText("Tomar");
         jButton2.setBorderPainted(false);
         jButton2.setContentAreaFilled(false);
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara32.png"))); // NOI18N
+        jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara48.png"))); // NOI18N
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
         gridBagConstraints.gridy = 13;
@@ -347,6 +410,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelEstadoCivil.setLayout(new java.awt.GridBagLayout());
 
         buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton1.setText("Casado");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -358,6 +422,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelEstadoCivil.add(jRadioButton1, gridBagConstraints);
 
         buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton2.setText("Soltero");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -368,6 +433,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.5;
         panelEstadoCivil.add(jRadioButton2, gridBagConstraints);
 
+        jLabel10.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel10.setText("Numero de hijos");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -399,6 +465,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContacto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Contacto"));
         panelContacto.setLayout(new java.awt.GridBagLayout());
 
+        jLabel11.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel11.setText("Telefono fijo");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -407,6 +474,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridheight = 2;
         panelContacto.add(jLabel11, gridBagConstraints);
 
+        jLabel12.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel12.setText("Correo electronico");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -415,6 +483,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridheight = 2;
         panelContacto.add(jLabel12, gridBagConstraints);
 
+        jLabel13.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel13.setText("Telefono movil");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -423,6 +492,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridheight = 2;
         panelContacto.add(jLabel13, gridBagConstraints);
 
+        jTextField6.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField6.setText("dmhernan@yahoo.com");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -432,6 +502,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         panelContacto.add(jTextField6, gridBagConstraints);
 
+        jTextField7.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField7.setText("3265-0722");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -441,6 +512,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         panelContacto.add(jTextField7, gridBagConstraints);
 
+        jTextField8.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField8.setText("9508-1236");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -463,6 +535,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelLugarNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Lugar de nacimiento"));
         panelLugarNacimiento.setLayout(new java.awt.GridBagLayout());
 
+        jLabel14.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel14.setText("Departamento");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -473,6 +546,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelLugarNacimiento.add(jLabel14, gridBagConstraints);
 
+        jLabel15.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel15.setText("Barrio ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -483,6 +557,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelLugarNacimiento.add(jLabel15, gridBagConstraints);
 
+        jLabel16.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel16.setText("Municipio");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -493,6 +568,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelLugarNacimiento.add(jLabel16, gridBagConstraints);
 
+        jTextField9.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField9.setText("Cortes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -503,6 +579,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelLugarNacimiento.add(jTextField9, gridBagConstraints);
 
+        jTextField10.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField10.setText("Puerto Cortes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -513,6 +590,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelLugarNacimiento.add(jTextField10, gridBagConstraints);
 
+        jTextField11.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField11.setText("Barrio La Coconcordia");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -536,6 +614,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelContactoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Persona de contacto"));
         panelContactoPersonal.setLayout(new java.awt.GridBagLayout());
 
+        jLabel17.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel17.setText("Nombre");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -546,6 +625,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelContactoPersonal.add(jLabel17, gridBagConstraints);
 
+        jLabel18.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel18.setText("Telefono");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -556,6 +636,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelContactoPersonal.add(jLabel18, gridBagConstraints);
 
+        jTextField12.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField12.setText("Juan Alberto Madrid Ramos");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -566,6 +647,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelContactoPersonal.add(jTextField12, gridBagConstraints);
 
+        jTextField13.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField13.setText("9515-3654");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 4;
@@ -597,6 +679,7 @@ public class FrmFicha extends javax.swing.JFrame {
 
         panelInfoAcademica1.setLayout(new java.awt.GridBagLayout());
 
+        jLabel20.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel20.setText("Secundaria");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -607,6 +690,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jLabel20, gridBagConstraints);
 
+        jLabel21.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel21.setText("Estudiante universitario");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -617,6 +701,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jLabel21, gridBagConstraints);
 
+        jLabel22.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel22.setText("Tercer nivel(Completo)");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -653,6 +738,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.2;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox3, gridBagConstraints);
+
+        jTextField14.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 2;
@@ -661,6 +748,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jTextField14, gridBagConstraints);
+
+        jTextField15.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 3;
@@ -669,6 +758,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jTextField15, gridBagConstraints);
+
+        jTextField16.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 6;
         gridBagConstraints.gridy = 4;
@@ -678,6 +769,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jTextField16, gridBagConstraints);
 
+        jLabel23.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel23.setText("Instruccion");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -686,6 +778,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         panelInfoAcademica1.add(jLabel23, gridBagConstraints);
 
+        jLabel24.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel24.setText("Titulo obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 7;
@@ -706,6 +799,7 @@ public class FrmFicha extends javax.swing.JFrame {
 
         panelInfoAcemica2.setLayout(new java.awt.GridBagLayout());
 
+        jLabel25.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel25.setText("Maestria");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -716,6 +810,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel25, gridBagConstraints);
 
+        jLabel26.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel26.setText("Universidad");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -726,6 +821,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel26, gridBagConstraints);
 
+        jLabel27.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel27.setText("Secundaria");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -736,6 +832,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jLabel27, gridBagConstraints);
 
+        jLabel28.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel28.setText("Instruccion");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -767,6 +864,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.2;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jCheckBox6, gridBagConstraints);
+
+        jTextField17.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 4;
@@ -775,6 +874,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jTextField17, gridBagConstraints);
+
+        jTextField18.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 3;
@@ -783,6 +884,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.5;
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jTextField18, gridBagConstraints);
+
+        jTextField19.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 2;
@@ -792,6 +895,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcemica2.add(jTextField19, gridBagConstraints);
 
+        jLabel29.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel29.setText("Titulo obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -810,6 +914,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelInfoAcemica2, gridBagConstraints);
 
+        jLabel1.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Marque con una X , en el caso de Cuarto Nivel, indique el título obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -820,6 +925,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.8;
         panelPrincipal.add(jLabel1, gridBagConstraints);
 
+        jLabel2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel2.setText("Marque con una X , en el caso de Cuarto Nivel, indique el título obtenido");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -831,6 +937,7 @@ public class FrmFicha extends javax.swing.JFrame {
 
         panelOtraInformacion.setLayout(new java.awt.GridBagLayout());
 
+        jLabel30.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel30.setText("Informacion Laboral");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -838,6 +945,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 11;
         panelOtraInformacion.add(jLabel30, gridBagConstraints);
 
+        jLabel31.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel31.setText("Fecha de ingreso");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -847,6 +955,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel31, gridBagConstraints);
 
+        jLabel32.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel32.setText("Cargo");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -856,6 +965,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel32, gridBagConstraints);
 
+        jLabel33.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel33.setText("Lugar donde sufraga");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
@@ -865,6 +975,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel33, gridBagConstraints);
 
+        jTextField20.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField20.setText("25 de mayo de 202");
         jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -880,6 +991,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jTextField20, gridBagConstraints);
 
+        jTextField21.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField21.setText("Ejecutivo de Ventas");
         jTextField21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -895,6 +1007,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jTextField21, gridBagConstraints);
 
+        jTextField22.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField22.setText("Aldea El Chile, Puerto Cortes");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 5;
@@ -914,6 +1027,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 1.0;
         panelOtraInformacion.add(jSeparator3, gridBagConstraints);
 
+        jLabel34.setFont(new java.awt.Font("Calibri Light", 1, 14)); // NOI18N
         jLabel34.setText("Informacion de la entidad bancaria donde tien una cuenta activa");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 12;
@@ -922,6 +1036,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         panelOtraInformacion.add(jLabel34, gridBagConstraints);
 
+        jLabel35.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel35.setText("Institucion Bancaria");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 12;
@@ -932,6 +1047,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel35, gridBagConstraints);
 
+        jLabel36.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel36.setText("Numero de cuenta");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 12;
@@ -942,6 +1058,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel36, gridBagConstraints);
 
+        jLabel37.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jLabel37.setText("Tipo de cuenta");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 12;
@@ -952,6 +1069,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jLabel37, gridBagConstraints);
 
+        jTextField23.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField23.setText("Banco de Occidente");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 16;
@@ -962,6 +1080,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jTextField23, gridBagConstraints);
 
+        jTextField24.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField24.setText("3598-0213-95221");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 16;
@@ -972,6 +1091,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.25;
         panelOtraInformacion.add(jTextField24, gridBagConstraints);
 
+        jTextField25.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
         jTextField25.setText("Cuenta de ahorro");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 16;
@@ -997,6 +1117,7 @@ public class FrmFicha extends javax.swing.JFrame {
 
         txaNota.setEditable(false);
         txaNota.setColumns(25);
+        txaNota.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         txaNota.setLineWrap(true);
         txaNota.setRows(3);
         txaNota.setTabSize(3);
@@ -1072,6 +1193,10 @@ public class FrmFicha extends javax.swing.JFrame {
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
     private javax.swing.JCheckBox jCheckBox3;
@@ -1147,6 +1272,7 @@ public class FrmFicha extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField7;
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
+    private javax.swing.JPanel panelBotones;
     private javax.swing.JPanel panelContacto;
     private javax.swing.JPanel panelContactoPersonal;
     private javax.swing.JPanel panelEstadoCivil;
