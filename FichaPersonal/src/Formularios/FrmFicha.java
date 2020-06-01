@@ -11,9 +11,6 @@ package Formularios;
  */
 public class FrmFicha extends javax.swing.JFrame {
 
-    /**
-     * Creates new form FrmFicha
-     */
     public FrmFicha() {
         initComponents();
         setSize(900,600);
@@ -51,6 +48,8 @@ public class FrmFicha extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
         panelEstadoCivil = new javax.swing.JPanel();
         jRadioButton1 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
@@ -169,17 +168,17 @@ public class FrmFicha extends javax.swing.JFrame {
         jLabel38 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(248, 249, 249));
         setSize(new java.awt.Dimension(400, 500));
-        getContentPane().setLayout(new java.awt.BorderLayout(0, 10));
 
         scpInformacion.setBackground(new java.awt.Color(153, 153, 255));
+        scpInformacion.setOpaque(false);
 
         panelPrincipal.setBackground(new java.awt.Color(241, 248, 233));
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
-        panelInfoPersonal.setBackground(new java.awt.Color(204, 204, 255));
-        panelInfoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Informacion personal", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelInfoPersonal.setOpaque(false);
+        panelInfoPersonal.setBackground(new java.awt.Color(241, 248, 233));
+        panelInfoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Datos personales", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelInfoPersonal.setLayout(new java.awt.GridBagLayout());
 
         jLabel3.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -309,8 +308,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelInfoPersonal, gridBagConstraints);
 
-        panelInstitucion.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Ultima Insitución Pública en caso de haber laborado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelInstitucion.setOpaque(false);
+        panelInstitucion.setBackground(new java.awt.Color(241, 248, 233));
+        panelInstitucion.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Ultima Insitución Pública en caso de haber laborado", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelInstitucion.setLayout(new java.awt.GridBagLayout());
 
         jLabel8.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -322,6 +321,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.3;
         gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         panelInstitucion.add(jLabel8, gridBagConstraints);
 
         jTextField5.setFont(new java.awt.Font("Calibri", 1, 13)); // NOI18N
@@ -335,6 +335,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.7;
         gridBagConstraints.weighty = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         panelInstitucion.add(jTextField5, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -347,9 +348,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.05;
         panelPrincipal.add(panelInstitucion, gridBagConstraints);
 
-        panelFoto.setBackground(java.awt.Color.white);
-        panelFoto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Foto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 0, 12))); // NOI18N
-        panelFoto.setOpaque(false);
+        panelFoto.setBackground(new java.awt.Color(241, 248, 233));
+        panelFoto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Foto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelFoto.setLayout(new java.awt.GridBagLayout());
 
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -364,7 +364,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.8;
         panelFoto.add(jLabel9, gridBagConstraints);
 
-        jButton1.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/subirFoto32.png"))); // NOI18N
         jButton1.setText("Subir");
         jButton1.setBorderPainted(false);
@@ -384,7 +384,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelFoto.add(jButton1, gridBagConstraints);
 
-        jButton2.setFont(new java.awt.Font("Verdana", 1, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("Calibri", 1, 12)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara32.png"))); // NOI18N
         jButton2.setText("Tomar");
         jButton2.setBorderPainted(false);
@@ -394,6 +394,11 @@ public class FrmFicha extends javax.swing.JFrame {
         jButton2.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara32.png"))); // NOI18N
         jButton2.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/camara48.png"))); // NOI18N
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 2;
         gridBagConstraints.gridy = 12;
@@ -403,6 +408,22 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weightx = 0.2;
         gridBagConstraints.weighty = 0.2;
         panelFoto.add(jButton2, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 15;
+        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weighty = 1.0;
+        panelFoto.add(jLabel57, gridBagConstraints);
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 12;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.gridwidth = 2;
+        gridBagConstraints.gridheight = 15;
+        gridBagConstraints.weightx = 0.3;
+        gridBagConstraints.weighty = 1.0;
+        panelFoto.add(jLabel58, gridBagConstraints);
 
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 18;
@@ -414,8 +435,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.2;
         panelPrincipal.add(panelFoto, gridBagConstraints);
 
-        panelEstadoCivil.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Estado civil", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelEstadoCivil.setOpaque(false);
+        panelEstadoCivil.setBackground(new java.awt.Color(241, 248, 233));
+        panelEstadoCivil.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Estado civil", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelEstadoCivil.setLayout(new java.awt.GridBagLayout());
 
         buttonGroup1.add(jRadioButton1);
@@ -453,7 +474,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridx = 5;
         gridBagConstraints.gridy = 0;
         gridBagConstraints.gridwidth = 7;
-        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.weightx = 0.4;
         gridBagConstraints.weighty = 0.5;
         panelEstadoCivil.add(jLabel10, gridBagConstraints);
@@ -477,11 +498,11 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(10, 0, 10, 0);
         panelPrincipal.add(panelEstadoCivil, gridBagConstraints);
 
-        panelContacto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelContacto.setOpaque(false);
+        panelContacto.setBackground(new java.awt.Color(241, 248, 233));
+        panelContacto.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelContacto.setLayout(new java.awt.GridBagLayout());
 
-        jLabel11.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Calibri Light", 0, 13)); // NOI18N
         jLabel11.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel11.setText("Telefono fijo");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -494,7 +515,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelContacto.add(jLabel11, gridBagConstraints);
 
-        jLabel12.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Calibri Light", 0, 13)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel12.setText("Correo electronico");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -507,7 +528,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelContacto.add(jLabel12, gridBagConstraints);
 
-        jLabel13.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Calibri Light", 0, 13)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("Telefono movil");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -572,8 +593,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelContacto, gridBagConstraints);
 
-        panelLugarNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Lugar de nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelLugarNacimiento.setOpaque(false);
+        panelLugarNacimiento.setBackground(new java.awt.Color(241, 248, 233));
+        panelLugarNacimiento.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Lugar de nacimiento", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 11), new java.awt.Color(102, 102, 102))); // NOI18N
         panelLugarNacimiento.setLayout(new java.awt.GridBagLayout());
 
         jLabel14.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -661,8 +682,8 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.15;
         panelPrincipal.add(panelLugarNacimiento, gridBagConstraints);
 
-        panelContactoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Persona de contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 0, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        panelContactoPersonal.setOpaque(false);
+        panelContactoPersonal.setBackground(new java.awt.Color(241, 248, 233));
+        panelContactoPersonal.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Persona de contacto", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelContactoPersonal.setLayout(new java.awt.GridBagLayout());
 
         jLabel17.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -985,6 +1006,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 17;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
         panelPrincipal.add(jLabel1, gridBagConstraints);
 
         jLabel2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
@@ -997,6 +1019,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.gridwidth = 17;
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.weightx = 0.8;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 10, 0);
         panelPrincipal.add(jLabel2, gridBagConstraints);
 
         panelOtraInformacion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -1205,7 +1228,7 @@ public class FrmFicha extends javax.swing.JFrame {
         scpTextArea.setOpaque(false);
 
         txaNota.setEditable(false);
-        txaNota.setBackground(new java.awt.Color(240, 240, 240));
+        txaNota.setBackground(new java.awt.Color(248, 249, 249));
         txaNota.setColumns(25);
         txaNota.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         txaNota.setForeground(new java.awt.Color(51, 51, 51));
@@ -1772,53 +1795,58 @@ public class FrmFicha extends javax.swing.JFrame {
 
         getContentPane().add(scpInformacion, java.awt.BorderLayout.CENTER);
 
-        panelBotones.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 20, 5));
+        panelBotones.setBackground(new java.awt.Color(248, 249, 249));
+        panelBotones.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 5));
 
         jButton3.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarPersona32.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agreparPersona48.png"))); // NOI18N
         jButton3.setText("Nuevo");
         jButton3.setBorder(null);
         jButton3.setBorderPainted(false);
         jButton3.setContentAreaFilled(false);
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarPersona32.png"))); // NOI18N
-        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agreparPersona48.png"))); // NOI18N
+        jButton3.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agreparPersona48.png"))); // NOI18N
+        jButton3.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregarPersona32.png"))); // NOI18N
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         panelBotones.add(jButton3);
 
         jButton4.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona32.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona48.png"))); // NOI18N
         jButton4.setText("Guardar");
         jButton4.setBorder(null);
         jButton4.setBorderPainted(false);
         jButton4.setContentAreaFilled(false);
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona32.png"))); // NOI18N
-        jButton4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona48.png"))); // NOI18N
+        jButton4.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona48.png"))); // NOI18N
+        jButton4.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/guardarPersona32.png"))); // NOI18N
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         panelBotones.add(jButton4);
 
         jButton5.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona32.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona48.png"))); // NOI18N
         jButton5.setText("Actualizar");
         jButton5.setBorder(null);
         jButton5.setBorderPainted(false);
         jButton5.setContentAreaFilled(false);
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona32.png"))); // NOI18N
-        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona48.png"))); // NOI18N
+        jButton5.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona48.png"))); // NOI18N
+        jButton5.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizarPersona32.png"))); // NOI18N
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         panelBotones.add(jButton5);
 
         jButton6.setFont(new java.awt.Font("Verdana", 1, 13)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona32.png"))); // NOI18N
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona48.png"))); // NOI18N
         jButton6.setText("Eliminar");
         jButton6.setBorder(null);
         jButton6.setBorderPainted(false);
         jButton6.setContentAreaFilled(false);
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona32.png"))); // NOI18N
-        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona48.png"))); // NOI18N
+        jButton6.setPressedIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona48.png"))); // NOI18N
+        jButton6.setRolloverIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/eliminarPersona32.png"))); // NOI18N
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         panelBotones.add(jButton6);
 
@@ -1826,16 +1854,18 @@ public class FrmFicha extends javax.swing.JFrame {
 
         panelEncabezado.setLayout(new java.awt.GridLayout(2, 0));
 
-        jLabel39.setBackground(new java.awt.Color(204, 204, 255));
-        jLabel39.setFont(new java.awt.Font("Calibri", 0, 20)); // NOI18N
+        jLabel39.setBackground(new java.awt.Color(213, 245, 227));
+        jLabel39.setFont(new java.awt.Font("Calibri", 1, 20)); // NOI18N
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel39.setText("Ficha del Empleado");
+        jLabel39.setOpaque(true);
         panelEncabezado.add(jLabel39);
 
-        jLabel38.setBackground(new java.awt.Color(204, 255, 204));
+        jLabel38.setBackground(new java.awt.Color(254, 249, 231));
         jLabel38.setFont(new java.awt.Font("Calibri", 0, 20)); // NOI18N
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel38.setText("Ficha Personal");
+        jLabel38.setOpaque(true);
         panelEncabezado.add(jLabel38);
 
         getContentPane().add(panelEncabezado, java.awt.BorderLayout.NORTH);
@@ -1858,6 +1888,10 @@ public class FrmFicha extends javax.swing.JFrame {
     private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField18ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -1964,6 +1998,8 @@ public class FrmFicha extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
