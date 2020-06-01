@@ -27,7 +27,9 @@ public class FrmFicha extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
+        bgpEstadoCivil = new javax.swing.ButtonGroup();
+        bgpEstudiosUno = new javax.swing.ButtonGroup();
+        btgEstudiosDos = new javax.swing.ButtonGroup();
         scpInformacion = new javax.swing.JScrollPane();
         panelPrincipal = new javax.swing.JPanel();
         panelInfoPersonal = new javax.swing.JPanel();
@@ -440,7 +442,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelEstadoCivil.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), "Estado civil", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Calibri Light", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         panelEstadoCivil.setLayout(new java.awt.GridBagLayout());
 
-        buttonGroup1.add(jRadioButton1);
+        bgpEstadoCivil.add(jRadioButton1);
         jRadioButton1.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton1.setText("Casado");
         jRadioButton1.setContentAreaFilled(false);
@@ -454,7 +456,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.5;
         panelEstadoCivil.add(jRadioButton1, gridBagConstraints);
 
-        buttonGroup1.add(jRadioButton2);
+        bgpEstadoCivil.add(jRadioButton2);
         jRadioButton2.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton2.setText("Soltero");
         jRadioButton2.setContentAreaFilled(false);
@@ -799,6 +801,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(0, 10, 0, 0);
         panelInfoAcademica1.add(jLabel22, gridBagConstraints);
 
+        bgpEstudiosUno.add(jCheckBox1);
         jCheckBox1.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -808,6 +811,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox1, gridBagConstraints);
 
+        bgpEstudiosUno.add(jCheckBox2);
         jCheckBox2.setOpaque(false);
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -822,6 +826,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.3;
         panelInfoAcademica1.add(jCheckBox2, gridBagConstraints);
 
+        bgpEstudiosUno.add(jCheckBox3);
         jCheckBox3.setOpaque(false);
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 3;
@@ -1492,7 +1497,7 @@ public class FrmFicha extends javax.swing.JFrame {
         panelEstadoCivil1.setOpaque(false);
         panelEstadoCivil1.setLayout(new java.awt.GridBagLayout());
 
-        buttonGroup1.add(jRadioButton3);
+        bgpEstadoCivil.add(jRadioButton3);
         jRadioButton3.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton3.setText("Casado");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1504,7 +1509,7 @@ public class FrmFicha extends javax.swing.JFrame {
         gridBagConstraints.weighty = 0.5;
         panelEstadoCivil1.add(jRadioButton3, gridBagConstraints);
 
-        buttonGroup1.add(jRadioButton4);
+        bgpEstadoCivil.add(jRadioButton4);
         jRadioButton4.setFont(new java.awt.Font("Calibri", 0, 13)); // NOI18N
         jRadioButton4.setText("Soltero");
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1930,7 +1935,9 @@ public class FrmFicha extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup bgpEstadoCivil;
+    private javax.swing.ButtonGroup bgpEstudiosUno;
+    private javax.swing.ButtonGroup btgEstudiosDos;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
