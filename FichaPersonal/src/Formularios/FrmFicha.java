@@ -168,6 +168,7 @@ public class FrmFicha extends javax.swing.JFrame {
         jLabel38 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ficha de empleado");
         setBackground(new java.awt.Color(248, 249, 249));
         setSize(new java.awt.Dimension(400, 500));
 
